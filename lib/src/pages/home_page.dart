@@ -2,14 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_barcode_scan/src/Bloc/provider.dart';
 import 'package:food_barcode_scan/src/services/api_wrapper.dart';
 
-class HomePage extends StatefulWidget {
-  HomePage({Key key}) : super(key: key);
-
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
+class HomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     final bloc = Provider.of(context);
